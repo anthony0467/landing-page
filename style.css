@@ -1,0 +1,112 @@
+
+/************************************* RESET ********************************************/
+/* POLICE GOOGLE POPPINS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500;1,700;1,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Poppins', sans-serif;
+}
+ol, ul {
+	list-style: none;
+    text-decoration: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+/**************************HEADER******************************/
+
+/****************NAV***********/
+nav{
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 2rem;
+}
+
+h2{
+    font-size: 35px;
+    font-weight:900;
+}
+
+nav ul{
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/**********SECTION**********/
+
+section{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article{
+    flex-direction: column;
+    margin-top: 10rem;
+    padding: 4rem;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 900;
+    padding: 1rem;
+}
+
+article p {
+    font-size: 18px;
+    padding-right: 3rem;
+}
+
+figure{
+    min-width: 60%;
+}
+
+
+
+/****************************CLASS*******************************/
+
+.flex{
+    display: flex;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
