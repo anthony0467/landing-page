@@ -1,13 +1,14 @@
 
 /************************************* RESET ********************************************/
 /* POLICE GOOGLE POPPINS */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,500;1,700;1,900&display=swap');
 
 * {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
+    line-height: 1.2;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -65,7 +66,7 @@ nav{
 }
 
 h2{
-    font-size: 35px;
+    font-size: 45px;
     font-weight:900;
     color: #fff;
 }
@@ -79,11 +80,14 @@ nav ul{
 
 nav ul li a{
     font-size: 22px;
+    transition: .35s;
 }
 
+nav ul li:hover a{
+    color: rgba(228, 158, 18, 0.875);
+}
 
-
-/**********SECTION**********/
+/**********DIV**********/
 
 
 article{
@@ -131,6 +135,71 @@ figure{
     min-width: 60%;
 }
 
+/*************************MAIN**************************/
+main{
+    margin: 4rem 0;
+}
+
+section{
+    margin: 8rem 0;
+}
+
+h3{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+h4{
+    font-size: 28px;
+}
+p{
+    font-size: 18px;
+    margin: 1.5rem 0;
+    padding: 1rem;
+}
+/*********************SECTION1***************************/
+
+
+
+#first_section ul{
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+#first_section ul li{
+    background: radial-gradient(rgb(139, 195, 245), #1294b8);
+    border-radius: 10px;
+    max-width: 450px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    transition: .35s;
+}
+
+#first_section ul li:hover{
+    transform: translateY(-10px);
+}
+
+#first_section ul li *{
+    color: #fff;
+    margin: .5rem 0;
+}
+
+#first_section ul li i{
+    font-size: 40px;
+}
+
+#first_section ul li p{
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 1rem;
+}
+
+
 
 
 /****************************CLASS*******************************/
@@ -144,6 +213,14 @@ figure{
 
 .flex{
     display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.flex-center{
+    justify-content: center;
 }
 
 .space-around{
@@ -164,7 +241,14 @@ figure{
     margin: 2rem 4rem 2rem 0;
 }
 
+.color-grey{
+    color: grey;
+    
+}
 
+.txt-center{
+    text-align: center;
+}
 
 /*************************MEDIA QUERIES***********************/
 
