@@ -8,7 +8,7 @@
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-    line-height: 1.2;
+
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -18,7 +18,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.5;
     font-family: 'Poppins', sans-serif;
 }
 ol, ul {
@@ -97,6 +97,7 @@ article{
 }
 
 h1{
+    line-height: 1.2;
     font-size: 60px;
     font-weight: 900;
     padding: 1rem 1rem 1rem 0;
@@ -107,6 +108,7 @@ article p {
     padding-right: 3rem;
     line-height: 1.5;
     margin-top: 2rem;
+    text-align: left;
 }
 
 
@@ -145,7 +147,7 @@ section{
 }
 
 h3{
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 600;
     text-align: center;
     margin: 1.5rem 0;
@@ -154,8 +156,13 @@ h3{
 h4{
     font-size: 28px;
 }
-p{
-    font-size: 18px;
+
+h5{
+    font-size: 20px;
+    font-weight: 400;
+}
+main p{
+    font-size: 20px;
     margin: 1.5rem 0;
     padding: 1rem;
 }
@@ -195,12 +202,78 @@ p{
 
 #first_section ul li p{
     font-size: 18px;
-    line-height: 1.5;
     padding: 1rem;
+}
+
+/*******************************SECTION2**************************/
+
+p strong{
+    font-size: 28px;
 }
 
 
 
+#second_section ul{
+    margin-top: 4rem;
+    gap: 8rem;
+}
+
+
+
+#second_section ul *{
+    padding: 0;
+    margin: 0;
+}
+
+#second_section ul li{
+    max-width: 250px;
+}
+
+#second_section ul li h5,p{
+    text-align: center;
+}
+
+
+#second_section ul li .img-box{
+    overflow: hidden;
+    border-radius: 150px;
+    margin-top: 4rem;
+}
+
+#second_section ul li .img-box img{
+    border-radius: 150px;
+    filter: grayscale();
+    transition: .35s;
+}
+
+#second_section ul li .img-box:hover img{
+    filter: none;
+    transform: scale(1.15);
+}
+#second_section .img-box div{
+    top: 0;
+    left: -20px;
+    transition: .35s;
+}
+
+#second_section ul li .img-box:hover div{
+    top: 65px;
+    left: 20px;
+    gap: 0.35rem;
+    ;
+}
+
+
+#second_section ul li .img-box div i{
+   background-color: #fff;
+   padding: 0.25rem;
+   border-radius: 150px;
+   font-size: 20px;
+}
+
+#second_section ul li p{
+    font-size: 15px;
+}
 
 /****************************CLASS*******************************/
 
@@ -213,6 +286,10 @@ p{
 
 .flex{
     display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
 }
 
 .column{
@@ -250,6 +327,24 @@ p{
     text-align: center;
 }
 
+.members{
+    align-items: center;
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.icon-fb{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
 /*************************MEDIA QUERIES***********************/
 
 @media screen and (max-width: 350px) {
@@ -279,6 +374,7 @@ form button{
 
     article p {
         padding-right: 0;
+        text-align: center;
     }
     
     form button{
