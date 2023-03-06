@@ -298,6 +298,31 @@ p strong{
     color: #fff;
 }
 
+/**************************SECTION-CLIENT*******************************/
+
+#client_section h1{
+ font-size: 35px;
+ font-weight: 600;
+ text-align: center;
+}
+
+#client_section p{
+    max-width: 600px;
+   }
+
+ #client_section ul{
+    gap: 4rem;
+   }
+
+#client_section img{
+    width: 150px;
+    filter: contrast(0.1);
+    transition: .35s;
+}
+
+#client_section img:hover{
+    filter: contrast(1);
+}
 
 /**************************SECTION-BLOG*******************************/
 
@@ -357,6 +382,10 @@ p strong{
 
 .flex-center{
     justify-content: center;
+}
+
+.align-center{
+    align-items: center;
 }
 
 .space-around{
