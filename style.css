@@ -133,7 +133,7 @@ form button:hover{
     background-color:#17a6cdff;
 }
 
-figure{
+header figure{
     min-width: 60%;
 }
 
@@ -359,6 +359,52 @@ p strong{
     pointer-events: none;
 }
 
+/**************************SECTION-PRICING*******************************/
+
+#pricing_section h5{
+    font-size: 20px;
+    font-weight: 600;
+   }
+
+#pricing_section article p{
+    padding: 0;
+    font-size: 15px;
+    color: grey;
+   }
+
+ #pricing_section article {
+    margin: 2rem 0;
+}
+
+#pricing_section img{
+   max-width: 400px;
+   }
+
+#pricing_section article ul li p{
+    margin-top: 0;
+}
+
+
+
+.card{
+    min-width: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    -webkit-box-shadow: 0px 2px 5px 0px #807575; 
+    box-shadow: 0px 2px 5px 0px #807575;
+
+}
+.card-prices ul{
+    margin-bottom: 2rem;
+}
+
+.card-prices li p{
+    font-size: 15px;
+    margin: 0;
+    padding: .25rem;
+}
+
 /****************************CLASS*******************************/
 
 .container{
@@ -392,6 +438,13 @@ p strong{
     justify-content: space-around;
 }
 
+.space-between{
+    justify-content: space-between;
+}
+
+.bg-grey{
+    background-color: #8080801f;
+}
 
 .color-white{
     color: #fff;
@@ -409,6 +462,14 @@ p strong{
 .color-grey{
     color: grey;
     
+}
+
+.color-red{
+    color: red;
+}
+
+.color-green{
+    color: green;
 }
 
 .txt-center{
@@ -448,9 +509,38 @@ p strong{
     transition: .35s;
 }
 
+.btn-blue{
+    color: #fff;
+    background-color: rgb(99 111 255);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: .35s;
+}
+
+.btn-blue:hover{
+    background-color:  rgb(50, 61, 187); ;
+}
+
 .btn:hover{
     color: #000!important;
     background-color: #fff;
+}
+
+.btn-white{
+    color: rgb(99 111 255);
+    background-color: #fff;
+    border: 1px solid rgb(99 111 255);
+    padding: 0.5rem 5rem;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: .35s;
+}
+
+.btn-white:hover{
+    color: #fff;
+    background-color: rgb(99 111 255);
+    padding: 0.5rem 5rem;
 }
 
 .contain-img{
@@ -473,8 +563,22 @@ p strong{
     opacity: 0;
 }
 
+.gap-3x{
+    gap: 3rem;
+}
+
+.font-size-15{
+    font-size: 15px;
+}
 
 
+.card-prices{
+    padding: 3rem 0;
+}
+
+.card-price{
+    padding: .5rem 0!important;
+}
 /*************************MEDIA QUERIES***********************/
 
 @media screen and (max-width: 350px) {
@@ -516,7 +620,7 @@ form button{
 
     /*********************HEADER**********************/
 
-    article p {
+    header article p {
         padding-right: 0;
         text-align: center;
     }
