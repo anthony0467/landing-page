@@ -322,11 +322,18 @@ p strong{
 
 #blog_section ul li img{
     border-radius: 5px;
+    transition: .35s;
    }
+
 
 #blog_section ul li article div a{
     color:  #1294b8;
 }
+
+.author{
+    pointer-events: none;
+}
+
 /****************************CLASS*******************************/
 
 .container{
@@ -416,6 +423,28 @@ p strong{
     color: #000!important;
     background-color: #fff;
 }
+
+.contain-img{
+    transition: .35s;
+}
+
+.contain-img img:hover {
+    filter: brightness(.7);
+    transition: .35s;
+}
+
+.contain-img:hover .author{
+    opacity: 1;
+}
+
+.author{
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    opacity: 0;
+}
+
+
 
 /*************************MEDIA QUERIES***********************/
 
