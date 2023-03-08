@@ -10,6 +10,7 @@
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -101,6 +102,7 @@
         <!--CARD-->
 
         <section id="first_section" class="container">
+            <div class="product-large-ecran">
             <h3>Products Features</h3>
             <p class="color-grey txt-center">It is a long established fact that a reader will be of a page when<br>
                 established fact looking at its layout.</p>
@@ -127,7 +129,39 @@
                         regelialia</p>
                 </li>
             </ul>
+        </div>
+        
+            <ul class="flex flex-center product-none">
+            <swiper-container autoplay>
+                <swiper-slide>
+                    <li class="flex column">
+                        <i class="fa-solid fa-globe"></i>
+                        <h4>Digital Design</h4>
+                        <p>Some quick example text to build on the card title and make up the bulk of the card the platform.
+                        </p>
+                    </li>
+                </swiper-slide>
+
+                <swiper-slide>
+                    <li class="flex column">
+                        <i class="fa-solid fa-brush"></i>
+                        <h4>Unlimited Colors</h4>
+                        <p>Credibly brand stanaads compliant user exteible services College Anibh ocean euismod tincidunt
+                            laoret</p>
+                    </li>
+                </swiper-slide>
+                <swiper-slide>
+                    <li class="flex column">
+                        <i class="fa-sharp fa-solid fa-chess"></i>
+                        <h4>Strategy Solutions</h4>
+                        <p>Separated they live in Bookmarks grove right at the coast of the Semantics, a large ocean
+                            regelialia</p>
+                    </li>
+                </swiper-slide>
+              </swiper-container>
+            </ul> 
         </section>
+              
 
         <!--MEMBRES-->
 
@@ -135,7 +169,7 @@
             <h3>We'r dynamic team of talented people of<br> innovative & marketing expert</h3>
             <p class="color-grey txt-center">To achieve this, it would be necessary to have uniform grammar,
                 pronunciation <br> and more common words. If several languages of the resulting language.</p>
-            <ul class="flex flex-center wrap container">
+            <ul class="flex flex-center wrap container large-ecran">
                 <li class="flex column members">
                     <p><strong>1499+</strong></p>
                     <p class="color-grey">Complete projects</p>
@@ -203,9 +237,87 @@
                         <p class="color-grey">Web Developer</p>
                     </div>
                 </li>
-
-                
             </ul>
+            <ul class="flex flex-center wrap container">
+                <swiper-container class="mobile-galery" autoplay>
+                    <swiper-slide>
+                        <li class="flex column members">
+                            <p><strong>1499+</strong></p>
+                            <p class="color-grey">Complete projects</p>
+                            <div class="relative img-box">
+                                <img src="img/person1.png" alt="personne1" title="personne1">
+                                <div class="flex column absolute flex-center test">
+                                    <a href="#"><i class="icon-fb fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-skype"></i></a>
+                                </div>
+                            </div>
+                            <div>
+                                <h5>Anna G. Wilhite</h5>
+                                <p class="color-grey">CEO/Founder</p>
+                            </div>
+                        </li>
+                    </swiper-slide>
+    
+                    <swiper-slide>
+                        <li class="flex column members">
+                            <p><strong>1080K</strong></p>
+                            <p class="color-grey">Satisfied Clients</p>
+                            <div class="relative img-box">
+                                <img src="img/person2.png" alt="personne1" title="personne1">
+                                <div class="flex column absolute flex-center test">
+                                    <a href="#"><i class="icon-fb fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-skype"></i></a>
+                                </div>
+                            </div>
+                            <div>
+                                <h5>William S.Blay</h5>
+                                <p class="color-grey">CTO/Co-Founder</p>
+                            </div>
+                        </li>
+                    </swiper-slide>
+    
+                    <swiper-slide>
+                        <li class="flex column members">
+                            <p><strong>608</strong></p>
+                            <p class="color-grey">Team Members</p>
+                            <div class="relative img-box">
+                                <img src="img/person3.png" alt="personne1" title="personne1">
+                                <div class="flex column absolute flex-center test">
+                                    <a href="#"><i class="icon-fb fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-skype"></i></a>
+                                </div>
+                            </div>
+                            <div>
+                                <h5>Maria B.Morales</h5>
+                                <p class="color-grey">Web Designer</p>
+                            </div>
+                        </li>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <li class="flex column members">
+                            <p><strong>252</strong></p>
+                            <p class="color-grey">Employee</p>
+                            <div class="relative img-box">
+                                <img src="img/person4.png" alt="personne1" title="personne1">
+                                <div class="flex column absolute flex-center test">
+                                    <a href="#"><i class="icon-fb fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-skype"></i></a>
+                                </div>
+                            </div>
+                            <div>
+                                <h5>Luke L.Johnston</h5>
+                                <p class="color-grey">Web Developer</p>
+                            </div>
+                        </li>
+                    </swiper-slide>
+                  </swiper-container>
+            </ul>
+            
+
         </section>
 
         <!--PARALLAX-->
@@ -261,7 +373,7 @@
             <h3>Our Blog</h3>
             <p class="color-grey txt-center">It is a long established fact that a reader will be of a page when<br>
                 established fact looking at its layout.</p>
-
+                <div id="collapse_container" class="collapse-section">
             <ul class="flex wrap flex-center">
                 <li>
                     <article class="relative">
@@ -318,6 +430,8 @@
                 </li>
 
             </ul>
+        </div>
+        <div class="button-add btn-blue txt-center button-blog-none">En savoir plus</div>
         </section>
 
     
@@ -525,6 +639,21 @@
             x.style.display = "flex";
           }
         }
+
+        //Fonction pour ouvrir fermer la section
+        const collapse = document.getElementById('collapse_container')
+        const buttonAdd = document.querySelector('.button-add')
+
+        buttonAdd.addEventListener('click', function(){
+            collapse.classList.toggle('block')
+
+            if(buttonAdd.innerHTML === 'En savoir plus'){
+                buttonAdd.innerHTML = 'cacher l\'article'
+            }else{
+                buttonAdd.innerHTML = 'En savoir plus'
+            }
+        })
+
         </script>
 
 </body>
