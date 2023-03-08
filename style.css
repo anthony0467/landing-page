@@ -12,6 +12,11 @@
 	font: inherit;
 	
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -51,6 +56,7 @@ a{
 }
 
 
+
 /**************************HEADER******************************/
 header{
     background:  radial-gradient(rgb(139, 195, 245), #1294b8);
@@ -86,6 +92,49 @@ nav ul li a{
 nav ul li:hover a{
     color: rgba(228, 158, 18, 0.875);
 }
+
+/******************NAV-MOBILE********************/
+
+
+.topnav {
+    display: none;
+    overflow: hidden;
+    background-color: transparent;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+    align-items: center;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: transparent;
+    color: white;
+  }
+
+
 
 /**********DIV**********/
 
@@ -139,14 +188,15 @@ header figure{
 
 /*************************MAIN**************************/
 main{
-    margin: 4rem 0;
+    margin-top: 4rem;
 }
 
 section{
-    margin: 8rem 0;
+    margin-top: 8rem;
 }
 
 h3{
+    padding: 1rem;
     font-size: 35px;
     font-weight: 600;
     text-align: center;
@@ -178,7 +228,7 @@ main p{
 #first_section ul li{
     background: radial-gradient(rgb(139, 195, 245), #1294b8);
     border-radius: 10px;
-    max-width: 450px;
+    max-width: 400px;
     height: 350px;
     justify-content: center;
     align-items: center;
@@ -226,7 +276,7 @@ p strong{
 }
 
 #second_section ul li{
-    max-width: 250px;
+    max-width: 200px;
 }
 
 #second_section ul li h5,p{
@@ -420,6 +470,35 @@ transform: translateY(-30px);
     padding: .25rem;
 }
 
+/******************************FOOTER*********************************/
+#footer div{
+    padding-bottom: 3rem;
+}
+
+#footer ul li *{
+    color: grey;
+}
+
+.icon-footer li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    border: 1px solid grey;
+    border-radius: 50px;
+    padding: .35rem;
+}
+
+.lien-footer li {
+    padding-bottom: 1rem;
+}
+
+.lien-footer li *{
+    padding: 0 1rem;
+}
+
+
 /****************************CLASS*******************************/
 
 .container{
@@ -459,6 +538,10 @@ transform: translateY(-30px);
 
 .bg-grey{
     background-color: #8080801f;
+}
+
+.bg-black{
+    background-color: #1b1a1a;
 }
 
 .color-white{
@@ -582,6 +665,10 @@ transform: translateY(-30px);
     gap: 3rem;
 }
 
+.font-size-13{
+    font-size: 13px;
+}
+
 .font-size-15{
     font-size: 15px;
 }
@@ -604,6 +691,61 @@ transform: translateY(-30px);
     top: -7px;
     right: -6px;
 }
+
+.icon-footer{
+    gap: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+.icon-parameter{
+    position: fixed;
+    top: 50%;
+    z-index: 99;
+}
+
+.icon-parameter a{
+background-color: #1b1a1a;
+color: #fff;
+padding: 1rem;
+}
+
+.scroll-to-top{
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    z-index: 99;
+}
+
+.scroll-to-top a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b1a1a;
+    color: #fff;
+    padding: 0.5rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+/*******************ANIMATION**********************/
+.icon-parameter a i{
+    animation: rotation 3s infinite;
+    animation-timing-function: linear;
+}
+
+
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
 /*************************MEDIA QUERIES***********************/
 
 @media screen and (max-width: 350px) {
@@ -633,9 +775,19 @@ form button{
     /********************GENERAL**************************/
 
     section{
-        margin: 4rem 0;
+        margin-top: 4rem;
     }
 
+
+     /********************NAV**************************/
+
+     nav{
+        display: none!important;
+     }
+
+     .topnav{
+        display: block;
+     }
 
 /**************************SECTION3*******************************/
     #third_section h1{
