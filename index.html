@@ -102,10 +102,11 @@
         <!--CARD-->
 
         <section id="first_section" class="container">
-            <div class="product-large-ecran">
+           
             <h3>Products Features</h3>
             <p class="color-grey txt-center">It is a long established fact that a reader will be of a page when<br>
                 established fact looking at its layout.</p>
+             <div class="product-large-ecran">
             <ul class="flex flex-center">
 
                 <li class="flex column">
@@ -133,7 +134,7 @@
         
             <ul class="flex flex-center product-none">
             <swiper-container autoplay>
-                <swiper-slide>
+                <swiper-slide data-swiper-autoplay="1500">
                     <li class="flex column">
                         <i class="fa-solid fa-globe"></i>
                         <h4>Digital Design</h4>
@@ -142,7 +143,7 @@
                     </li>
                 </swiper-slide>
 
-                <swiper-slide>
+                <swiper-slide data-swiper-autoplay="1500">
                     <li class="flex column">
                         <i class="fa-solid fa-brush"></i>
                         <h4>Unlimited Colors</h4>
@@ -150,7 +151,7 @@
                             laoret</p>
                     </li>
                 </swiper-slide>
-                <swiper-slide>
+                <swiper-slide data-swiper-autoplay="1500">
                     <li class="flex column">
                         <i class="fa-sharp fa-solid fa-chess"></i>
                         <h4>Strategy Solutions</h4>
@@ -160,6 +161,7 @@
                 </swiper-slide>
               </swiper-container>
             </ul> 
+
         </section>
               
 
@@ -631,6 +633,7 @@
     </footer>
 
     <script>
+  
         function myFunction() {
           var x = document.getElementById("myLinks");
           if (x.style.display === "flex") {
