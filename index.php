@@ -474,7 +474,14 @@
                 
                 <ul class="flex wrap flex-center gap-3x card-prices">
                 <?php
+
                 foreach($pricings as $pricing){
+                
+                    $onlineSpace = ($pricing['OnlineSpace'] >= 1000) ? ($pricing['OnlineSpace'] / 1000).  'GB' : ($pricing['OnlineSpace']).  'MB';
+
+                    
+
+
                 echo '<li class="card relative">
                         <h5 class="txt-center">'.$pricing['nom_pricing'].'</h5>
                         <div class="txt-center color-grey"><var><sup>$</sup>'.$pricing['price'].'</var>/month</div>
@@ -486,12 +493,12 @@
             
                             <li class="flex space-between card-price">
                                 <p><i class="fa-sharp fa-regular fa-circle-check color-green"></i> Onlinespace</p>
-                                <p>'.$pricing['OnlineSpace'].'MB</p>
+                                <p>'.$onlineSpace.'</p>
                             </li>
             
                             <li class="flex space-between card-price">
 
-                            <p>'.($pricing['support'] === 1 ? '<i class="fa-sharp fa-regular fa-circle-check color-green"></i> Support:</p>' : '<i class="fa-regular fa-circle-xmark color-red"></i> Support: ').'</p>
+                            <p>'.($pricing['support'] == 1 ? '<i class="fa-sharp fa-regular fa-circle-check color-green"></i> Support:</p>' : '<i class="fa-regular fa-circle-xmark color-red"></i> Support: ').'</p>
 
                                 
                                 <p>'.$pricing['domainYes'].'</p>
@@ -503,7 +510,7 @@
                             </li>
             
                             <li class="flex space-between card-price">
-                            <p>'.($pricing['hidden_fees'] === 0 ? '<i class="fa-sharp fa-regular fa-circle-check color-green"></i> Hidden Fees:</p>' : '<i class="fa-regular fa-circle-xmark color-red"></i> Hidden Fees: ').'</p>
+                            <p>'.($pricing['hidden_fees'] == 0 ? '<i class="fa-sharp fa-regular fa-circle-check color-green"></i> Hidden Fees:</p>' : '<i class="fa-regular fa-circle-xmark color-red"></i> Hidden Fees: ').'</p>
                                 <p>'.$pricing['feesYes'].'</p>
                             </li>
                         </ul>
