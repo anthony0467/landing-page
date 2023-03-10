@@ -33,7 +33,12 @@ CREATE TABLE IF NOT EXISTS `pricing` (
   PRIMARY KEY (`id_pricing`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Les données exportées n'étaient pas sélectionnées.
+-- Listage des données de la table landing_page.pricing : ~4 rows (environ)
+INSERT INTO `pricing` (`id_pricing`, `nom_pricing`, `price`, `Sale`, `bandwidth`, `OnlineSpace`, `support`, `domain`, `hidden_fees`) VALUES
+	(1, 'Starter', 9, NULL, 1, 500, b'0', '1', b'0'),
+	(2, 'Advanced', 19, 20, 2, 1, b'1', '3', b'0'),
+	(3, 'Professional', 29, NULL, 3, 2, b'1', 'Unlimited', b'0'),
+	(4, 'amateur', 15, 10, 1, 1, b'1', '2', b'0');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
