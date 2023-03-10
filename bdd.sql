@@ -14,6 +14,25 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
+
+-- Listage de la structure de la base pour landing_page
+CREATE DATABASE IF NOT EXISTS `landing_page` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `landing_page`;
+
+-- Listage de la structure de table landing_page. pricing
+CREATE TABLE IF NOT EXISTS `pricing` (
+  `id_pricing` int NOT NULL AUTO_INCREMENT,
+  `nom_pricing` varchar(50) NOT NULL DEFAULT '',
+  `price` float NOT NULL DEFAULT '0',
+  `Sale` int DEFAULT NULL,
+  `bandwidth` int NOT NULL,
+  `OnlineSpace` int NOT NULL,
+  `support` bit(1) NOT NULL DEFAULT b'0',
+  `domain` varchar(50) NOT NULL DEFAULT '0',
+  `hidden_fees` bit(1) NOT NULL DEFAULT b'0',
+  PRIMARY KEY (`id_pricing`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 -- Les données exportées n'étaient pas sélectionnées.
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
