@@ -476,9 +476,12 @@
                 <?php
 
                 foreach($pricings as $pricing){
-                
+                    // MB OU GB en fonction du resultat
                     $onlineSpace = ($pricing['OnlineSpace'] >= 1000) ? ($pricing['OnlineSpace'] / 1000).  'GB' : ($pricing['OnlineSpace']).  'MB';
-
+                    // GERER ICONE SUPPORT 
+                    $support = ($pricing['support'] == 1 ? '<i class="fa-sharp fa-regular fa-circle-check color-green"></i> Support:</p>' : '<i class="fa-regular fa-circle-xmark color-red"></i> Support: ');
+                    //GERER ICONE HIDDEN FEES
+                    $fees = ($pricing['hidden_fees'] == 0 ? '<i class="fa-sharp fa-regular fa-circle-check color-green"></i> Hidden Fees:</p>' : '<i class="fa-regular fa-circle-xmark color-red"></i> Hidden Fees: ');
                     
 
 
@@ -498,7 +501,7 @@
             
                             <li class="flex space-between card-price">
 
-                            <p>'.($pricing['support'] == 1 ? '<i class="fa-sharp fa-regular fa-circle-check color-green"></i> Support:</p>' : '<i class="fa-regular fa-circle-xmark color-red"></i> Support: ').'</p>
+                            <p>'.$support.'</p>
 
                                 
                                 <p>'.$pricing['domainYes'].'</p>
@@ -510,7 +513,7 @@
                             </li>
             
                             <li class="flex space-between card-price">
-                            <p>'.($pricing['hidden_fees'] == 0 ? '<i class="fa-sharp fa-regular fa-circle-check color-green"></i> Hidden Fees:</p>' : '<i class="fa-regular fa-circle-xmark color-red"></i> Hidden Fees: ').'</p>
+                            <p>'.$fees.'</p>
                                 <p>'.$pricing['feesYes'].'</p>
                             </li>
                         </ul>
@@ -525,111 +528,7 @@
                 }
                     ?>
 
-                    <!--
-                    <li class="card">
-                        <h5 class="txt-center">Starter</h5>
-                        <div class="txt-center color-grey"><var><sup>$</sup>9</var>/month</div>
-                        <ul>
-                            <li class="flex space-between card-price">
-                                <p><i class="fa-sharp fa-regular fa-circle-check color-green"></i> Bandwidth</p>
-                                <p>1GB</p>
-                            </li>
-            
-                            <li class="flex space-between card-price">
-                                <p><i class="fa-sharp fa-regular fa-circle-check color-green"></i> Onlinespace</p>
-                                <p>500MB</p>
-                            </li>
-            
-                            <li class="flex space-between card-price">
-                                <p><i class="fa-regular fa-circle-xmark color-red"></i> Support:No</p>
-                                <p>No</p>
-                            </li>
-            
-                            <li class="flex space-between card-price">
-                                <p><i class="fa-sharp fa-regular fa-circle-check color-green"></i> Domain</p>
-                                <p>1</p>
-                            </li>
-            
-                            <li class="flex space-between card-price">
-                                <p><i class="fa-regular fa-circle-xmark color-red"></i> Hidden Fees</p>
-                                <p>No</p>
-                            </li>
-                        </ul>
-                        <div class="txt-center">
-                            <a href="#" class="btn-white">Join Now</a>
-                        </div>
-                    </li>
-
-                    <li class="card relative">
-                        <h5 class="txt-center">Starter</h5>
-                        <div class="txt-center color-grey"><var><sup>$</sup>19</var>/month</div>
-                        <ul>
-                            <li class="flex space-between card-price ">
-                                <p><i class="fa-sharp fa-regular fa-circle-check color-green"></i> Bandwidth</p>
-                                <p>2GB</p>
-                            </li>
-            
-                            <li class="flex space-between card-price">
-                                <p><i class="fa-sharp fa-regular fa-circle-check color-green"></i> Onlinespace</p>
-                                <p>1GB</p>
-                            </li>
-            
-                            <li class="flex space-between card-price">
-                                <p><i class="fa-sharp fa-regular fa-circle-check color-green"></i> Support:No</p>
-                                <p>Yes</p>
-                            </li>
-            
-                            <li class="flex space-between card-price">
-                                <p><i class="fa-sharp fa-regular fa-circle-check color-green"></i> Domain</p>
-                                <p>3</p>
-                            </li>
-            
-                            <li class="flex space-between card-price">
-                                <p><i class="fa-sharp fa-regular fa-circle-check color-green"></i> Hidden Fees</p>
-                                <p>No</p>
-                            </li>
-                        </ul>
-                        <div class="txt-center">
-                            <a href="#" class="btn-white">Join Now</a>
-                        </div>
-                        <span class="absolute promo">20%<br>sale</span>
-                    </li>
-
-                    <li class="card">
-                        <h5 class="txt-center">Starter</h5>
-                        <div class="txt-center color-grey"><var><sup>$</sup>29</var>/month</div>
-                        <ul>
-                            <li class="flex space-between card-price">
-                                <p><i class="fa-sharp fa-regular fa-circle-check color-green"></i> Bandwidth</p>
-                                <p>3GB</p>
-                            </li>
-            
-                            <li class="flex space-between card-price">
-                                <p><i class="fa-sharp fa-regular fa-circle-check color-green"></i> Onlinespace</p>
-                                <p>2GB</p>
-                            </li>
-            
-                            <li class="flex space-between card-price">
-                                <p><i class="fa-sharp fa-regular fa-circle-check color-green"></i> Support:No</p>
-                                <p>Yes</p>
-                            </li>
-            
-                            <li class="flex space-between card-price">
-                                <p><i class="fa-sharp fa-regular fa-circle-check color-green"></i> Domain</p>
-                                <p>Unlimited</p>
-                            </li>
-            
-                            <li class="flex space-between card-price">
-                                <p><i class="fa-sharp fa-regular fa-circle-check color-green"></i> Hidden Fees</p>
-                                <p>No</p>
-                            </li>
-                        </ul>
-                        <div class="txt-center">
-                            <a href="#" class="btn-white">Join Now</a>
-                        </div>
-                    </li>
-
-            -->
+                 
                 </ul>
             
             </div>
